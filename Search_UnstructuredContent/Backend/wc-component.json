@@ -1,0 +1,2915 @@
+{
+	"valuemappingservice": {
+		"valuemapping": [{
+			"externalName": "SearchControlParameterMapping",
+			"internalName": "SearchControlParameterMapping",
+			"valuemap": [{
+				"externalValue": "searchType",
+				"internalValue": "_wcf.search.type"
+			},
+			{
+				"externalValue": "searchSource",
+				"internalValue": "_wcf.search.source"
+			},
+			{
+				"externalValue": "orderBy",
+				"internalValue": "_wcf.search.sort"
+			},
+			{
+				"externalValue": "pageNumber",
+				"internalValue": "_wcf.search.page.number"
+			},
+			{
+				"externalValue": "pageSize",
+				"internalValue": "_wcf.search.page.size"
+			},
+			{
+				"externalValue": "categoryId",
+				"internalValue": "_wcf.search.category"
+			},
+			{
+				"externalValue": "catalogId",
+				"internalValue": "_wcf.search.catalog"
+			},
+			{
+				"externalValue": "langId",
+				"internalValue": "_wcf.search.language"
+			},
+			{
+				"externalValue": "locale",
+				"internalValue": "_wcf.search.locale"
+			},
+			{
+				"externalValue": "storeId",
+				"internalValue": "_wcf.search.store.online"
+			},
+			{
+				"externalValue": "physicalStoreIds",
+				"internalValue": "_wcf.search.store.physical"
+			},
+			{
+				"externalValue": "contractId",
+				"internalValue": "_wcf.search.contract"
+			},
+			{
+				"externalValue": "currency",
+				"internalValue": "_wcf.search.currency"
+			},
+			{
+				"externalValue": "returnFields",
+				"internalValue": "_wcf.search.internal.response.fields"
+			},
+			{
+				"externalValue": "responseFormat",
+				"internalValue": "_wcf.search.internal.response.format"
+			},
+			{
+				"externalValue": "responseTemplate",
+				"internalValue": "_wcf.search.internal.response.template"
+			},
+			{
+				"externalValue": "facet",
+				"internalValue": "_wcf.search.facet"
+			},
+			{
+				"externalValue": "facetLimit",
+				"internalValue": "_wcf.search.facet.field.limit"
+			},
+			{
+				"externalValue": "minPrice",
+				"internalValue": "_wcf.search.price.minimum"
+			},
+			{
+				"externalValue": "maxPrice",
+				"internalValue": "_wcf.search.price.maximum"
+			},
+			{
+				"externalValue": "manufacturer",
+				"internalValue": "_wcf.search.manufacturer"
+			},
+						{
+				"externalValue": "seller",
+				"internalValue": "_wcf.search.seller"
+			},
+			
+			{
+				"externalValue": "filterFacet",
+				"internalValue": "_wcf.search.exclude.facet"
+			},
+			{
+				"externalValue": "depthAndLimit",
+				"internalValue": "_wcf.search.category.limitSubCategories"
+			},
+			{
+				"externalValue": "originalSearchTerm",
+				"internalValue": "_wcf.search.originalterm"
+			},
+			{
+				"externalValue": "priceMode",
+				"internalValue": "_wcf.search.price"
+			},
+			{
+				"externalValue": "checkEntitlement",
+				"internalValue": "_wcf.search.checkEntitlement"
+			},
+			{
+				"externalValue": "forUserId",
+				"internalValue": "_wcf.search.runAsId"
+			},
+			{
+				"externalValue": "readSchema",
+				"internalValue": "_wcf.search.internal.workspace.schema"
+			},
+			{
+				"externalValue": "hostingContractId",
+				"internalValue": "_wcf.search.hostcontract"
+			},
+			{
+				"externalValue": "filterTerm",
+				"internalValue": "_wcf.search.exclude.term"
+			},
+			{
+				"externalValue": "filterType",
+				"internalValue": "_wcf.search.exclude.type"
+			},
+			{
+				"externalValue": "profileName",
+				"internalValue": "_wcf.search.profile"
+			},
+			{
+				"externalValue": "searchTerm",
+				"internalValue": "_wcf.search.term"
+			},
+			{
+				"externalValue": "attachmentFilter",
+				"internalValue": "_wcf.search.attachment.filter"
+			},
+			{
+				"externalValue": "partNumber",
+				"internalValue": "_wcf.search.partnumber"
+			},
+			{
+				"externalValue": "categoryIdentifier",
+				"internalValue": "_wcf.search.category.identifier"
+			},
+			{
+				"externalValue": "associationType",
+				"internalValue": "_wcf.search.association.type"
+			},
+			{
+				"externalValue": "attributeKeyword",
+				"internalValue": "_wcf.search.attribute.associatedKeyword"
+			},
+			{
+				"externalValue": "maxSlop",
+				"internalValue": "_wcf.search.edismax.maxSlop"
+			},
+			{
+				"externalValue": "minMatch",
+				"internalValue": "_wcf.search.edismax.mm"
+			},
+			{
+				"externalValue": "relevancyMode",
+				"internalValue": "_wcf.search.relevancy.mode"
+			},
+			{
+				"externalValue": "minMatchOption",
+				"internalValue": "_wcf.search.minMatch.option"
+			},
+			{
+				"externalValue": "limit",
+				"internalValue": "_wcf.search.suggestion.limit"
+			},
+			{
+				"externalValue": "resultGroupForceTo",
+				"internalValue": "_wcf.search.resultGrouping.forceTo"
+			}]
+		},
+		{	
+			"externalName": "V2UrlResponseFieldMapping",	
+			"internalName": "V2UrlResponseFieldMapping",	
+			"valuemap": [{	
+				"externalValue": "id",	
+				"internalValue": "id.url"	
+			},	
+			{	
+				"externalValue": "storeId",	
+				"internalValue": "id.store"	
+			},	
+			{	
+				"externalValue": "identifier",	
+				"internalValue": "identifier.url"	
+			},	
+			{	
+				"externalValue": "tokenExternalValue",	
+				"internalValue": "token.identifier"	
+			},	
+			{	
+				"externalValue": "status",	
+				"internalValue": "status"	
+			},	
+			{	
+				"externalValue": "tokenName",	
+				"internalValue": "token.name"	
+			},	
+			{	
+				"externalValue": "tokenValue",	
+				"internalValue": "token.id"	
+			},	
+			{	
+				"externalValue": "tokenType",	
+				"internalValue": "token.type"	
+			},	
+			{	
+				"externalValue": "language",	
+				"internalValue": "identifier.language"	
+			},	
+			{	
+				"externalValue": "redirect",	
+				"internalValue": "redirect"	
+			},	
+			{	
+				"externalValue": "name",	
+				"internalValue": "page.name"	
+			},	
+			{	
+				"externalValue": "title",	
+				"internalValue": "page.title"	
+			},	
+			{	
+				"externalValue": "metaKeyword",	
+				"internalValue": "page.meta.keyword"	
+			},	
+			{	
+				"externalValue": "imageAlternateDescription",	
+				"internalValue": "page.meta.image"	
+			},	
+			{	
+				"externalValue": "metaDescription",	
+				"internalValue": "page.meta.description"	
+			},	
+			{	
+				"externalValue": "type",	
+				"internalValue": "page.type"	
+			},			
+			{	
+				"externalValue": "name",	
+				"internalValue": "template.name"	
+			},	
+			{	
+				"externalValue": "title",	
+				"internalValue": "template.title"	
+			},	
+			{	
+				"externalValue": "metaKeyword",	
+				"internalValue": "template.meta.keyword"	
+			},	
+			{	
+				"externalValue": "imageAlternateDescription",	
+				"internalValue": "template.meta.image"	
+			},	
+			{	
+				"externalValue": "metaDescription",	
+				"internalValue": "template.meta.description"	
+			}	
+			]	
+		},
+		{	
+			"externalName": "UnstructuredContentResponseFieldMapping",	
+			"internalName": "UnstructuredContentResponseFieldMapping",	
+			"valuemap": [{	
+				"externalValue": "content",	
+				"internalValue": "attachment.content"	
+			},	
+			{	
+				"externalValue": "name",	
+				"internalValue": "attachment.title"	
+			},	
+			{	
+				"externalValue": "identifier",	
+				"internalValue": "filename"	
+			},	
+			{	
+				"externalValue": "mimetype",	
+				"internalValue": "attachment.content_type"	
+			},	
+			{	
+				"externalValue": "url",	
+				"internalValue": "fileABSPath"	
+			}
+			]	
+		},
+		{	
+			"externalName": "V2UrlUserDataResponseFieldMapping",	
+			"internalName": "V2UrlUserDataResponseFieldMapping"
+		},
+		{
+			"externalName": "CatalogEntryUserDataFieldNameMapping",
+			"internalName": "CatalogEntryUserDataFieldNameMapping"
+		},
+		{
+			"externalName": "CatalogGroupUserDataFieldNameMapping",
+			"internalName": "CatalogGroupUserDataFieldNameMapping"
+		},
+		{
+			"externalName": "AttachmentUserDataFieldNameMapping",
+			"internalName": "AttachmentUserDataFieldNameMapping"
+		},
+		{
+			"externalName": "SearchIndexReturnFieldMapping",
+			"internalName": "SearchIndexReturnFieldMapping",
+			"valuemap": [{
+				"externalValue": "productId",
+				"internalValue": "catentry_id"
+			},
+			{
+				"externalValue": "productType",
+				"internalValue": "catenttype_id_ntk_cs"
+			},
+			{
+				"externalValue": "buyable",
+				"internalValue": "buyable"
+			},
+			{
+				"externalValue": "published",
+				"internalValue": "published"
+			},
+			{
+				"externalValue": "name",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "shortDescription",
+				"internalValue": "shortDescription"
+			},
+			{
+				"externalValue": "longDescription",
+				"internalValue": "longDescription"
+			},
+			{
+				"externalValue": "keyword",
+				"internalValue": "keyword"
+			},
+			{
+				"externalValue": "thumbnail",
+				"internalValue": "thumbnail"
+			},
+			{
+				"externalValue": "fullImage",
+				"internalValue": "fullImage"
+			},
+			{
+				"externalValue": "manufacturer",
+				"internalValue": "mfName_ntk"
+			},
+			{
+				"externalValue": "partNumber",
+				"internalValue": "partNumber_ntk"
+			},
+			{
+				"externalValue": "parentCategoryId",
+				"internalValue": "parentCatgroup_id_facet"
+			},
+			{
+				"externalValue": "parentProductId",
+				"internalValue": "parentCatentry_id"
+			},
+			{
+				"externalValue": "childProductId",
+				"internalValue": "childCatentry_id"
+			},
+			{
+				"externalValue": "catalogId",
+				"internalValue": "catalog_id"
+			},
+			{
+				"externalValue": "sequence",
+				"internalValue": "sequence"
+			},
+			{
+				"externalValue": "price",
+				"internalValue": "price_*"
+			},
+			{
+				"externalValue": "listprice",
+				"internalValue": "listprice_*"
+			},
+			{
+				"externalValue": "storeId",
+				"internalValue": "storeent_id"
+			},
+			{
+				"externalValue": "categoryId",
+				"internalValue": "catgroup_id"
+			},
+			{
+				"externalValue": "categoryIdentifier",
+				"internalValue": "identifier_ntk"
+			},
+			{
+				"externalValue": "categoryName",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "categoryShortDescription",
+				"internalValue": "shortDescription"
+			},
+			{
+				"externalValue": "categorySequence",
+				"internalValue": "sequence"
+			},
+			{
+				"externalValue": "attachmentId",
+				"internalValue": "attachmentrel_id"
+			},
+			{
+				"externalValue": "contentName",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "contentPath",
+				"internalValue": "path"
+			},
+			{
+				"externalValue": "mimetype",
+				"internalValue": "mimetype"
+			},
+			{
+				"externalValue": "contentShortDescription",
+				"internalValue": "shortdesc"
+			}]
+		},
+		 {	
+			"externalName": "XPathToProductViewV2ResponseFieldNameMapping",	
+			"internalName": "XPathToProductViewV2ResponseFieldNameMapping",	
+			"valuemap": [{	
+				"externalValue": "type",	
+				"internalValue": "catalogEntryTypeCode"	
+			},	
+			{	
+				"externalValue": "items",	
+				"internalValue": "sKUs"	
+			},	
+			{	
+				"externalValue": "id",	
+				"internalValue": "uniqueID"	
+			},	
+			{	
+				"externalValue": "total",	
+				"internalValue": "recordSetTotal"	
+			},	
+			{	
+				"externalValue": "contents",	
+				"internalValue": "catalogEntryView"	
+			},	
+			{	
+				"externalValue": "facets",	
+				"internalValue": "facetView"	
+			}]	
+		},	
+		{	
+			"externalName": "XPathToCategoryViewV2ResponseFieldNameMapping",	
+			"internalName": "XPathToCategoryViewV2ResponseFieldNameMapping",	
+			"valuemap": [{	
+				"externalValue": "children",	
+				"internalValue": "childCatalogGroupID"	
+			},	
+			{	
+				"externalValue": "contents",	
+				"internalValue": "catalogGroupView"	
+			},	
+			{	
+				"externalValue": "id",	
+				"internalValue": "uniqueID"	
+			},	
+			{	
+				"externalValue": "description",	
+				"internalValue": "shortDescription"	
+			},	
+			{	
+				"externalValue": "parent",	
+				"internalValue": "category.parent"	
+			}]	
+		},
+		{
+			"externalName": "XPathToCatalogEntryFieldNameMapping",
+			"internalName": "XPathToCatalogEntryFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "CatalogEntryView",
+				"internalValue": "MASK"
+			},
+			{
+				"externalValue": "CatalogEntryView/UniqueID",
+				"internalValue": "catentry_id"
+			},
+			{
+				"externalValue": "CatalogEntryView/CatalogEntryTypeCode",
+				"internalValue": "type"
+			},
+			{
+				"externalValue": "CatalogEntryView/Buyable",
+				"internalValue": "buyable"
+			},
+			{
+				"externalValue": "CatalogEntryView/DisallowRecurringOrder",
+				"internalValue": "disallowRecOrder"
+			},
+			{
+				"externalValue": "CatalogEntryView/SubscriptionTypeCode",
+				"internalValue": "subscripType"
+			},
+			{
+				"externalValue": "CatalogEntryView/Name",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "CatalogEntryView/ShortDescription",
+				"internalValue": "shortDescription"
+			},
+			{
+				"externalValue": "CatalogEntryView/LongDescription",
+				"internalValue": "longDescription"
+			},
+			{
+				"externalValue": "CatalogEntryView/Keyword",
+				"internalValue": "keyword"
+			},
+			{
+				"externalValue": "CatalogEntryView/Thumbnail",
+				"internalValue": "thumbnail"
+			},
+			{
+				"externalValue": "CatalogEntryView/FullImage",
+				"internalValue": "fullImage"
+			},
+			{
+				"externalValue": "CatalogEntryView/Manufacturer",
+				"internalValue": "mfName_ntk"
+			},
+			{
+				"externalValue": "CatalogEntryView/PartNumber",
+				"internalValue": "partNumber_ntk"
+			},
+			{
+				"externalValue": "CatalogEntryView/StoreID",
+				"internalValue": "id.store"
+			},
+			{
+				"externalValue": "CatalogEntryView/Price/Value[(Currency='*')]",
+				"internalValue": "offer.*"
+			},
+			{
+				"externalValue": "CatalogEntryView/Price/Value[(Currency='*') AND (../PriceUsage='Display')]",
+				"internalValue": "listprice_*"
+			},
+			{
+				"externalValue": "CatalogEntryView/Sequence",
+				"internalValue": "sequence"
+			},
+			{
+				"externalValue": "CatalogEntryView/CatalogGroupID",
+				"internalValue": "path.tree"
+			},
+			{
+				"externalValue": "CatalogEntryView/ParentCatalogGroupID",
+				"internalValue": "path.tree"
+			},
+			{
+				"externalValue": "CatalogEntryView/ParentCatalogGroupParentID",
+				"internalValue": "category.parent"
+			},
+			{
+				"externalValue": "CatalogEntryView/ParentCatalogEntryID",
+				"internalValue": "relationship.product.id"
+			},
+			{
+				"externalValue": "CatalogEntryView/ChildCatalogEntryID",
+				"internalValue": "childCatentry_id"
+			},
+			{
+				"externalValue": "CatalogEntryView/CatalogID",
+				"internalValue": "id.catalog"
+			},
+			{
+				"externalValue": "CatalogEntryView/Published",
+				"internalValue": "displayable"
+			},
+			{
+				"externalValue": "CatalogEntryView/DeepPublished",
+				"internalValue": "deep_published"
+			},
+			{
+				"externalValue": "CatalogEntryView/langID",
+				"internalValue": "id.language"
+			}]
+		},
+		{
+			"externalName": "XPathToCatalogEntryViewBODResponseFieldNameMapping",
+			"internalName": "XPathToCatalogEntryViewBODResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "catalogEntryView",
+				"internalValue": "catalogEntryView"
+			},
+			{
+				"externalValue": "sKUs",
+				"internalValue": "skus"
+			},
+			{
+				"externalValue": "variants",
+				"internalValue": "variants"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "id.catentry"
+			},
+			{
+				"externalValue": "partNumber",
+				"internalValue": "identifier.sku.raw"
+			},
+			{
+				"externalValue": "thumbnail",
+				"internalValue": "url.thumbnail"
+			},
+			{
+				"externalValue": "fullImage",
+				"internalValue": "url.image"
+			},
+			{
+				"externalValue": "shortDescription",
+				"internalValue": "description.raw"
+			},
+			{
+				"externalValue": "longDescription",
+				"internalValue": "description.long"
+			},
+			{
+				"externalValue": "manufacturer",
+				"internalValue": "manufacturer.raw"
+			},
+			{
+				"externalValue": "seller",
+				"internalValue": "seller.raw"
+			},
+			{
+				"externalValue": "sellerId",
+				"internalValue": "id.member"
+			},
+			{
+				"externalValue": "keyword",
+				"internalValue": "keyword.text"
+			},
+			{
+				"externalValue": "hasSingleSKU",
+				"internalValue": "hasSingleSKU"
+			},
+			{
+				"externalValue": "singleSKUCatalogEntryID",
+				"internalValue": "singleSKUCatalogEntryID"
+			},
+			{
+				"externalValue": "storeID",
+				"internalValue": "id.store"
+			},
+			{
+				"externalValue": "parentCatalogGroupID",
+				"internalValue": "path"
+			},
+			{
+				"externalValue": "parentCatalogEntryID",
+				"internalValue": "relationship.product.id"
+			},
+			{
+				"externalValue": "parentCatalogEntryID",
+				"internalValue": "relationship.variant.group"
+			},
+			{
+				"externalValue": "variants",
+				"internalValue": "relationship.variant.id"
+			},
+			{
+				"externalValue": "metaData",
+				"internalValue": "metaData"
+			},
+			{
+				"externalValue": "userData",
+				"internalValue": "userData"
+			},
+			{
+				"externalValue": "numberOfSKUs",
+				"internalValue": "numberOfSKUs"
+			},
+			{
+				"externalValue": "numberOfVariants",
+				"internalValue": "numberOfVariants"
+			},
+			{
+				"externalValue": "merchandisingAssociations",
+				"internalValue": "merchandisingAssociations"
+			},
+			{
+				"externalValue": "subscriptionTypeCode",
+				"internalValue": "subscription.type"
+			},
+			{
+				"externalValue": "dynamicKitURL",
+				"internalValue": "kit.URL"
+			},
+			{
+				"externalValue": "dynamicKitDefaultConfiguration",
+				"internalValue": "kit.default_configuration"
+			},
+			{
+				"externalValue": "dynamicKitDefaultConfigurationComplete",
+				"internalValue": "kit.preconfigured"
+			},
+			{
+				"externalValue": "dynamicKitModelReference",
+				"internalValue": "kit.model"
+			},
+			{
+				"externalValue": "parentDynamicKitModelReference",
+				"internalValue": "kit.parent.model"
+			},
+			{
+				"externalValue": "dynamicKitConfigurable",
+				"internalValue": "kit.configurable"
+			},
+			{
+				"externalValue": "parentDynamicKitConfigurable",
+				"internalValue": "kit.parent.configurable"
+			},
+			{
+				"externalValue": "dynamicKitOrgCode",
+				"internalValue": "codeMapping"
+			},
+			{
+				"externalValue": "dynamicKitConfigurationDate",
+				"internalValue": "configurationDate"
+			},
+			{
+				"externalValue": "title",
+				"internalValue": "title"
+			},
+			{
+				"externalValue": "metaDescription",
+				"internalValue": "metaDescription"
+			},
+			{
+				"externalValue": "metaKeyword",
+				"internalValue": "metaKeyword"
+			},
+			{
+				"externalValue": "fullImageAltDescription",
+				"internalValue": "fullImageAltDescription"
+			},
+			{
+				"externalValue": "buyable",
+				"internalValue": "buyable"
+			},
+			{
+				"externalValue": "catalogEntryTypeCode",
+				"internalValue": "type"
+			},
+			{
+				"externalValue": "disallowRecurringOrder",
+				"internalValue": "subscription.recurring"
+			},
+			{
+				"externalValue": "resourceId",
+				"internalValue": "resourceId"
+			},
+			{
+				"externalValue": "name",
+				"internalValue": "name.raw"
+			},
+			{
+				"externalValue": "buyable",
+				"internalValue": "buyable"
+			},
+			{
+				"externalValue": "published",
+				"internalValue": "published"
+			},
+			{
+				"externalValue": "sequence",
+				"internalValue": "sequence"
+			},
+			{
+				"externalValue": "catalogID",
+				"internalValue": "id.catalog"
+			},
+			{
+				"externalValue": "startDate",
+				"internalValue": "start"
+			},
+			{
+				"externalValue": "endDate",
+				"internalValue": "end"
+			},
+			{
+				"externalValue": "manualSequenceOverride",
+				"internalValue": "manualSequenceOverride"
+			}]
+		},
+		{
+			"externalName": "XPathToCatalogEntryViewResponseFieldNameMapping",
+			"internalName": "XPathToCatalogEntryViewResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "CatalogEntryView",
+				"internalValue": "catalogEntryView"
+			},
+			{
+				"externalValue": "SKUs",
+				"internalValue": "skus"
+			},
+			{
+				"externalValue": "variants",
+				"internalValue": "variants"
+			},
+			{
+				"externalValue": "buyable",
+				"internalValue": "buyable"
+			},
+			{
+				"externalValue": "disallowRecOrder",
+				"internalValue": "disallowRecOrder"
+			},
+			{
+				"externalValue": "fullImage",
+				"internalValue": "fullImage"
+			},
+			{
+				"externalValue": "fullImageAltDescription",
+				"internalValue": "fullImageAltDescription"
+			},
+			{
+				"externalValue": "hasSingleSKU",
+				"internalValue": "hasSingleSKU"
+			},
+			{
+				"externalValue": "singleSKUCatalogEntryID",
+				"internalValue": "singleSKUCatalogEntryID"
+			},
+			{
+				"externalValue": "longDescription",
+				"internalValue": "longDescription"
+			},
+			{
+				"externalValue": "manufacturer",
+				"internalValue": "mfName_ntk"
+			},
+			{
+				"externalValue": "metaDescription",
+				"internalValue": "metaDescription"
+			},
+			{
+				"externalValue": "metaKeyword",
+				"internalValue": "metaKeyword"
+			},
+			{
+				"externalValue": "name",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "numberOfSKUs",
+				"internalValue": "numberOfSKUs"
+			},
+			{
+				"externalValue": "numberOfVariants",
+				"internalValue": "numberOfVariants"
+			},
+			{
+				"externalValue": "parentCategoryID",
+				"internalValue": "parentCatgroup_id_facet"
+			},
+			{
+				"externalValue": "partNumber",
+				"internalValue": "partNumber_ntk"
+			},
+			{
+				"externalValue": "catalogEntryTypeCode",
+				"internalValue": "catenttype_id_ntk_cs"
+			},
+			{
+				"externalValue": "shortDescription",
+				"internalValue": "shortDescription"
+			},
+			{
+				"externalValue": "storeID",
+				"internalValue": "storeent_id"
+			},
+			{
+				"externalValue": "subscriptionType",
+				"internalValue": "subscripType"
+			},
+			{
+				"externalValue": "thumbnail",
+				"internalValue": "thumbnail"
+			},
+			{
+				"externalValue": "title",
+				"internalValue": "title"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "catentry_id"
+			},
+			{
+				"externalValue": "resourceId",
+				"internalValue": "resourceId"
+			},
+			{
+				"externalValue": "published",
+				"internalValue": "published"
+			},
+			{
+				"externalValue": "keyword",
+				"internalValue": "keyword"
+			},
+			{
+				"externalValue": "sequence",
+				"internalValue": "sequence"
+			},
+			{
+				"externalValue": "catalogGroupID",
+				"internalValue": "parentCatgroup_id_search"
+			},
+			{
+				"externalValue": "parentCatalogEntryID",
+				"internalValue": "parentCatentry_id"
+			},
+			{
+				"externalValue": "catalogID",
+				"internalValue": "catalog_id"
+			},
+			{
+				"externalValue": "dynamicKitURL",
+				"internalValue": "dkURL"
+			},
+			{
+				"externalValue": "dynamicKitDefaultConfiguration",
+				"internalValue": "dkDefaultConfiguration"
+			},
+			{
+				"externalValue": "dynamicKitDefaultConfigurationComplete",
+				"internalValue": "isDKPreConfigured"
+			},
+			{
+				"externalValue": "dynamicKitModelReference",
+				"internalValue": "dkModelReference"
+			},
+			{
+				"externalValue": "parentDynamicKitModelReference",
+				"internalValue": "parentDKModelRef"
+			},
+			{
+				"externalValue": "dynamicKitConfigurable",
+				"internalValue": "dkConfigurable"
+			},
+			{
+				"externalValue": "parentDynamicKitConfigurable",
+				"internalValue": "parentDKConfigurable"
+			},
+			{
+				"externalValue": "startDate",
+				"internalValue": "startdate"
+			},
+			{
+				"externalValue": "endDate",
+				"internalValue": "enddate"
+			}]
+		},
+		{
+			"externalName": "XPathToPriceBODResponseFieldNameMapping",
+			"internalName": "XPathToPriceBODResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "price",
+				"internalValue": "prices"
+			},
+			{
+				"externalValue": "value",
+				"internalValue": "value"
+			},
+			{
+				"externalValue": "currency",
+				"internalValue": "currency"
+			},
+			{
+				"externalValue": "description",
+				"internalValue": "description"
+			},
+			{
+				"externalValue": "usage",
+				"internalValue": "usage"
+			},
+			{
+				"externalValue": "minimumValue",
+				"internalValue": "minimumValue"
+			},
+			{
+				"externalValue": "maximumValue",
+				"internalValue": "maximumValue"
+			}]
+		},
+		{
+			"externalName": "XPathToPriceResponseFieldNameMapping",
+			"internalName": "XPathToPriceResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "Price",
+				"internalValue": "price"
+			},
+			{
+				"externalValue": "priceValue",
+				"internalValue": "value"
+			},
+			{
+				"externalValue": "priceCurrency",
+				"internalValue": "currency"
+			},
+			{
+				"externalValue": "priceDescription",
+				"internalValue": "description"
+			},
+			{
+				"externalValue": "priceUsage",
+				"internalValue": "usage"
+			},
+			{
+				"externalValue": "minimumValue",
+				"internalValue": "minimumValue"
+			},
+			{
+				"externalValue": "maximumValue",
+				"internalValue": "maximumValue"
+			}]
+		},
+		{
+			"externalName": "XPathToAttachmentsBODResponseFieldNameMapping",
+			"internalName": "XPathToAttachmentsBODResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "attachments",
+				"internalValue": "attachments"
+			},
+			{
+				"externalValue": "attachmentAssetID",
+				"internalValue": "attachment_id"
+			},
+			{
+				"externalValue": "attachmentAssetPath",
+				"internalValue": "path"
+			},
+			{
+				"externalValue": "attachmentAssetPathRaw",
+				"internalValue": "pathRaw"
+			},
+			{
+				"externalValue": "identifier",
+				"internalValue": "identifier"
+			},
+			{
+				"externalValue": "usage",
+				"internalValue": "rulename"
+			},
+			{
+				"externalValue": "mimeType",
+				"internalValue": "mimetype"
+			},
+			{
+				"externalValue": "shortdesc",
+				"internalValue": "shortdesc"
+			},
+			{
+				"externalValue": "longdesc",
+				"internalValue": "longdesc"
+			},
+			{
+				"externalValue": "name",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "image",
+				"internalValue": "image"
+			},
+			{
+				"externalValue": "userData",
+				"internalValue": "userData"
+			}]
+		},
+		{
+			"externalName": "XPathToAttachmentsResponseFieldNameMapping",
+			"internalName": "XPathToAttachmentsResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "Attachments",
+				"internalValue": "attachments"
+			},
+			{
+				"externalValue": "ID",
+				"internalValue": "attachment_id"
+			},
+			{
+				"externalValue": "path",
+				"internalValue": "path"
+			},
+			{
+				"externalValue": "identifier",
+				"internalValue": "identifier"
+			},
+			{
+				"externalValue": "usage",
+				"internalValue": "rulename"
+			},
+			{
+				"externalValue": "mimeType",
+				"internalValue": "mimetype"
+			},
+			{
+				"externalValue": "shortdesc",
+				"internalValue": "shortdesc"
+			},
+			{
+				"externalValue": "longdesc",
+				"internalValue": "longdesc"
+			},
+			{
+				"externalValue": "name",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "image",
+				"internalValue": "image"
+			},
+			{
+				"externalValue": "metaData",
+				"internalValue": "metaData"
+			},
+			{
+				"externalValue": "userData",
+				"internalValue": "userData"
+			}]
+		},
+		{
+			"externalName": "XPathToAttributesBODResponseFieldNameMapping",
+			"internalName": "XPathToAttributesBODResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "attributes",
+				"internalValue": "ad_attribute"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "id"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "attribute.id"
+			},
+			{
+				"externalValue": "usage",
+				"internalValue": "attribute.usage"
+			},
+			{
+				"externalValue": "identifier",
+				"internalValue": "attribute.identifier"
+			},
+			{
+				"externalValue": "identifier",
+				"internalValue": "attribute.identifier"
+			},
+			{
+				"externalValue": "sequence",
+				"internalValue": "attribute.sequence"
+			},
+			{
+				"externalValue": "name",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "identifier",
+				"internalValue": "value.identifier"
+			},
+			{
+				"externalValue": "value",
+				"internalValue": "value.raw"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "value.id"
+			},
+			{
+				"externalValue": "unitID",
+				"internalValue": "value.unit.identifier"
+			},
+			{
+				"externalValue": "unitOfMeasure",
+				"internalValue": "value.unit.name"
+			},
+			{
+				"externalValue": "sequence",
+				"internalValue": "value.sequence"
+			},
+			{
+				"externalValue": "comparable",
+				"internalValue": "comparable"
+			},
+			{
+				"externalValue": "displayable",
+				"internalValue": "displayable"
+			},
+			{
+				"externalValue": "searchable",
+				"internalValue": "searchable"
+			},
+			{
+				"externalValue": "facetable",
+				"internalValue": "facetable"
+			},
+			{
+				"externalValue": "storeDisplay",
+				"internalValue": "storeDisplay"
+			},
+			{
+				"externalValue": "description",
+				"internalValue": "description"
+			},
+			{
+				"externalValue": "associatedKeyword",
+				"internalValue": "associatedKeyword"
+			},
+			{
+				"externalValue": "dataType",
+				"internalValue": "dataType"
+			},
+			{
+				"externalValue": "userData",
+				"internalValue": "userData"
+			},
+			{
+				"externalValue": "extendedValue",
+				"internalValue": "extendedValue"
+			},
+			{
+				"externalValue": "image1",
+				"internalValue": "value.image1"
+			}]
+		},
+		{
+			"externalName": "XPathToAttributesResponseFieldNameMapping",
+			"internalName": "XPathToAttributesResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "Attributes",
+				"internalValue": "ad_attribute"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "attr_id"
+			},
+			{
+				"externalValue": "identifier",
+				"internalValue": "identifier"
+			},
+			{
+				"externalValue": "sequence",
+				"internalValue": "sequence"
+			},
+			{
+				"externalValue": "name",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "comparable",
+				"internalValue": "comparable"
+			},
+			{
+				"externalValue": "displayable",
+				"internalValue": "displayable"
+			},
+			{
+				"externalValue": "searchable",
+				"internalValue": "searchable"
+			},
+			{
+				"externalValue": "facetable",
+				"internalValue": "facetable"
+			},
+			{
+				"externalValue": "storeDisplay",
+				"internalValue": "storeDisplay"
+			},
+			{
+				"externalValue": "usage",
+				"internalValue": "usage"
+			},
+			{
+				"externalValue": "description",
+				"internalValue": "description"
+			},
+			{
+				"externalValue": "associatedKeyword",
+				"internalValue": "associatedKeyword"
+			},
+			{
+				"externalValue": "dataType",
+				"internalValue": "dataType"
+			},
+			{
+				"externalValue": "userData",
+				"internalValue": "userData"
+			},
+			{
+				"externalValue": "extendedValue",
+				"internalValue": "extendedValue"
+			}]
+		},
+		{
+			"externalName": "XPathToAttributesValuesBODResponseFieldNameMapping",
+			"internalName": "XPathToAttributesValuesBODResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "values",
+				"internalValue": "values"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "id"
+			},
+			{
+				"externalValue": "identifier",
+				"internalValue": "identifier"
+			},
+			{
+				"externalValue": "value",
+				"internalValue": "value"
+			},
+			{
+				"externalValue": "sequence",
+				"internalValue": "sequence"
+			},
+			{
+				"externalValue": "image1",
+				"internalValue": "image1"
+			},
+			{
+				"externalValue": "image1path",
+				"internalValue": "image1path"
+			},
+			{
+				"externalValue": "unitOfMeasure",
+				"internalValue": "unitOfMeasure"
+			},
+			{
+				"externalValue": "unitID",
+				"internalValue": "unitID"
+			},
+			{
+				"externalValue": "userData",
+				"internalValue": "userData"
+			}]
+		},
+		{
+			"externalName": "XPathToAttributesValuesResponseFieldNameMapping",
+			"internalName": "XPathToAttributesValuesResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "Values",
+				"internalValue": "attr_values"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "attrval_id"
+			},
+			{
+				"externalValue": "identifier",
+				"internalValue": "identifier"
+			},
+			{
+				"externalValue": "value",
+				"internalValue": "value"
+			},
+			{
+				"externalValue": "sequence",
+				"internalValue": "sequence"
+			},
+			{
+				"externalValue": "image1",
+				"internalValue": "image1"
+			},
+			{
+				"externalValue": "image1path",
+				"internalValue": "image1path"
+			},
+			{
+				"externalValue": "unitOfMeasure",
+				"internalValue": "unitOfMeasure"
+			},
+			{
+				"externalValue": "unitID",
+				"internalValue": "unitID"
+			},
+			{
+				"externalValue": "userData",
+				"internalValue": "userData"
+			}]
+		},
+		{
+			"externalName": "XPathToComponentsBODResponseFieldNameMapping",
+			"internalName": "XPathToComponentsBODResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "components",
+				"internalValue": "relationship.component.id"
+			},
+			{
+				"externalValue": "quantity",
+				"internalValue": "relationship.component.quantity"
+			},
+			{
+				"externalValue": "preConfigID",
+				"internalValue": "preDefConfId"
+			},
+			{
+				"externalValue": "preConfigCompID",
+				"internalValue": "componentListId"
+			},
+			{
+				"externalValue": "groupName",
+				"internalValue": "groupName"
+			},
+			{
+				"externalValue": "pdks",
+				"internalValue": "pdks"
+			}]
+		},
+		{
+			"externalName": "XPathToComponentsResponseFieldNameMapping",
+			"internalName": "XPathToComponentsResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "Components",
+				"internalValue": "components"
+			},
+			{
+				"externalValue": "Quantity",
+				"internalValue": "quantity"
+			},
+			{
+				"externalValue": "preConfigID",
+				"internalValue": "preDefConfId"
+			},
+			{
+				"externalValue": "preConfigCompID",
+				"internalValue": "componentListId"
+			},
+			{
+				"externalValue": "groupName",
+				"internalValue": "groupName"
+			},
+			{
+				"externalValue": "pdks",
+				"internalValue": "pdks"
+			}]
+		},
+		{
+			"externalName": "XPathToMerchandisingAssociationsBODResponseFieldNameMapping",
+			"internalName": "XPathToMerchandisingAssociationsBODResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "merchandisingAssociations",
+				"internalValue": "merchandisingAssociations"
+			},
+			{
+				"externalValue": "quantity",
+				"internalValue": "QUANTITY"
+			},
+			{
+				"externalValue": "associationType",
+				"internalValue": "MASSOCTYPE_ID"
+			}]
+		},
+		{
+			"externalName": "XPathToMerchandisingAssociationsResponseFieldNameMapping",
+			"internalName": "XPathToMerchandisingAssociationsResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "MerchandisingAssociations",
+				"internalValue": "merchandisingAssociations"
+			},
+			{
+				"externalValue": "quantity",
+				"internalValue": "QUANTITY"
+			},
+			{
+				"externalValue": "type",
+				"internalValue": "MASSOCTYPE_ID"
+			}]
+		},
+		{
+			"externalName": "XPathToBreadCrumbTrailResponseFieldNameMapping",
+			"internalName": "XPathToBreadCrumbTrailResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "breadCrumbTrailEntryView",
+				"internalValue": "BreadCrumbTrailEntryView"
+			},
+			{
+				"externalValue": "breadCrumbTrailEntryViewExtended",
+				"internalValue": "BreadCrumbTrailEntryViewExtended"
+			},
+			{
+				"externalValue": "label",
+				"internalValue": "label"
+			},
+			{
+				"externalValue": "type_",
+				"internalValue": "type"
+			},
+			{
+				"externalValue": "value",
+				"internalValue": "value"
+			}]
+		},
+		{
+			"externalName": "XPathToFacetResponseFieldNameMapping",
+			"internalName": "XPathToFacetResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "facetView",
+				"internalValue": "FacetView"
+			},
+			{
+				"externalValue": "facetView/entry",
+				"internalValue": "Entry"
+			},
+			{
+				"externalValue": "facetView/name",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "facetView/value",
+				"internalValue": "mfName_ntk_cs"
+			},
+			{
+				"externalValue": "facetView/value",
+				"internalValue": "parentCatgroup_id_search"
+			},
+			{
+				"externalValue": "facetView/value",
+				"internalValue": "price_USD"
+			}]
+		},
+		{
+			"externalName": "XPathToCatalogGroupFieldNameMapping",
+			"internalName": "XPathToCatalogGroupFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "CatalogGroupView",
+				"internalValue": "MASK"
+			},
+			{
+				"externalValue": "CatalogGroupView/UniqueID",
+				"internalValue": "path"
+			},
+			{
+				"externalValue": "CatalogGroupView/CatalogID",
+				"internalValue": "id.catalog"
+			},
+			{
+				"externalValue": "CatalogGroupView/CatalogGroupUniqueID",
+				"internalValue": "id.catgroup"
+			},
+			{
+				"externalValue": "CatalogGroupView/ChildCatalogGroupID",
+				"internalValue": "childCatgroup_id"
+			},
+			{
+				"externalValue": "CatalogGroupView/ParentCatalogGroupID",
+				"internalValue": "category.parent"
+			},
+			{
+				"externalValue": "CatalogGroupView/Identifier",
+				"internalValue": "identifier.category.raw"
+			},
+			{
+				"externalValue": "CatalogGroupView/Name",
+				"internalValue": "name.raw"
+			},
+			{
+				"externalValue": "CatalogGroupView/ShortDescription",
+				"internalValue": "description.raw"
+			},
+			{
+				"externalValue": "CatalogGroupView/LongDescription",
+				"internalValue": "description.long"
+			},
+			{
+				"externalValue": "CatalogGroupView/Thumbnail",
+				"internalValue": "url.thumbnail"
+			},
+			{
+				"externalValue": "CatalogGroupView/FullImage",
+				"internalValue": "url.image"
+			},
+			{
+				"externalValue": "CatalogEntryView/StoreID",
+				"internalValue": "id.store"
+			},
+			{
+				"externalValue": "CatalogEntryView/CatalogID",
+				"internalValue": "id.catalog"
+			},
+			{
+				"externalValue": "CatalogEntryView/Published",
+				"internalValue": "displayable"
+			},
+			{
+				"externalValue": "CatalogEntryView/DeepPublished",
+				"internalValue": "deep_published"
+			},
+			{
+				"externalValue": "CatalogEntryView/langID",
+				"internalValue": "id.language"
+			}]
+		},
+		{
+			"externalName": "XPathToCategoryViewResponseFieldNameMapping",
+			"internalName": "XPathToCategoryViewResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "CatalogGroupView",
+				"internalValue": "catalogGroupView"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "catgroup_id"
+			},
+			{
+				"externalValue": "catalogID",
+				"internalValue": "catalog_id"
+			},
+			{
+				"externalValue": "storeID",
+				"internalValue": "storeent_id"
+			},
+			{
+				"externalValue": "parentCatalogGroupID",
+				"internalValue": "parentCatgroup_id_facet"
+			},
+			{
+				"externalValue": "childCatalogGroupID",
+				"internalValue": "childCatgroup_id"
+			},
+			{
+				"externalValue": "identifier",
+				"internalValue": "identifier_ntk"
+			},
+			{
+				"externalValue": "name",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "shortDescription",
+				"internalValue": "shortDescription"
+			},
+			{
+				"externalValue": "longDescription",
+				"internalValue": "longDescription"
+			},
+			{
+				"externalValue": "thumbnail",
+				"internalValue": "thumbnail"
+			},
+			{
+				"externalValue": "fullImage",
+				"internalValue": "fullImage"
+			},
+			{
+				"externalValue": "resourceId",
+				"internalValue": "resourceId"
+			}]
+		},
+		{
+			"externalName": "XPathToCategoryViewBODResponseFieldNameMapping",
+			"internalName": "XPathToCategoryViewBODResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "catalogGroupView",
+				"internalValue": "catalogGroupView"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "id.catgroup"
+			},
+			{
+				"externalValue": "catalogID",
+				"internalValue": "id.catalog"
+			},
+			{
+				"externalValue": "storeID",
+				"internalValue": "id.store"
+			},
+			{
+				"externalValue": "parentCatalogGroupID",
+				"internalValue": "path"
+			},
+			{
+				"externalValue": "childCatalogGroupID",
+				"internalValue": "child"
+			},
+			{
+				"externalValue": "identifier",
+				"internalValue": "identifier.category.raw"
+			},
+			{
+				"externalValue": "name",
+				"internalValue": "name.raw"
+			},
+			{
+				"externalValue": "shortDescription",
+				"internalValue": "description.raw"
+			},
+			{
+				"externalValue": "longDescription",
+				"internalValue": "description.long"
+			},
+			{
+				"externalValue": "thumbnail",
+				"internalValue": "url.thumbnail"
+			},
+			{
+				"externalValue": "fullImage",
+				"internalValue": "url.image"
+			},
+			{
+				"externalValue": "sequence",
+				"internalValue": "category.sequence"
+			},
+			{
+				"externalValue": "resourceId",
+				"internalValue": "resourceId"
+			}]
+		},
+		{
+			"externalName": "XPathToWebContentViewBODResponseFieldNameMapping",
+			"internalName": "XPathToWebContentViewBODResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "webContentView",
+				"internalValue": "webContentView"
+			},
+			{
+				"externalValue": "uniqueID",
+				"internalValue": "attachmentrel_id"
+			},
+			{
+				"externalValue": "name",
+				"internalValue": "name"
+			},
+			{
+				"externalValue": "url",
+				"internalValue": "path"
+			},
+			{
+				"externalValue": "mimetype",
+				"internalValue": "mimetype"
+			},
+			{
+				"externalValue": "shortDescription",
+				"internalValue": "shortdesc"
+			},
+			{
+				"externalValue": "longDescription",
+				"internalValue": "longdesc"
+			}]
+		},
+		{
+			"externalName": "WebContentTypeMapping",
+			"internalName": "WebContentTypeMapping",
+			"valuemap": [{
+				"externalValue": "HTML",
+				"internalValue": "text/html"
+			},
+			{
+				"externalValue": "PDF",
+				"internalValue": "application/pdf"
+			},
+			{
+				"externalValue": "XML",
+				"internalValue": "application/xml"
+			},
+			{
+				"externalValue": "WORD",
+				"internalValue": "application/msword"
+			},
+			{
+				"externalValue": "PPT",
+				"internalValue": "application/mspowerpoint"
+			},
+			{
+				"externalValue": "EXCEL",
+				"internalValue": "application/msexcel"
+			}]
+		},
+		{
+			"externalName": "STAAssociationType",
+			"internalName": "STAAssociationType",
+			"valuemap": [{
+				"externalValue": "Synonym",
+				"internalValue": "1"
+			},
+			{
+				"externalValue": "AlsoSearchFor",
+				"internalValue": "2"
+			},
+			{
+				"externalValue": "SearchForInstead",
+				"internalValue": "3"
+			},
+			{
+				"externalValue": "LandingPageURL",
+				"internalValue": "4"
+			}]
+		},
+		{
+			"externalName": "XPathToGroupingBODResponseFieldNameMapping",
+			"internalName": "XPathToGroupingBODResponseFieldNameMapping",
+			"valuemap": [{
+				"externalValue": "catalogEntryGroupView",
+				"internalValue": "catalogEntryGroupView"
+			},
+			{
+				"externalValue": "groupingProperties",
+				"internalValue": "groupingProperties"
+			},
+			{
+				"externalValue": "groupOwner",
+				"internalValue": "groupOwner"
+			},
+			{
+				"externalValue": "groupHero",
+				"internalValue": "groupHero"
+			},
+			{
+				"externalValue": "groupCount",
+				"internalValue": "groupCount"
+			},
+			{
+				"externalValue": "groupMinPriceValue",
+				"internalValue": "groupMinPriceValue"
+			},
+			{
+				"externalValue": "groupMaxPriceValue",
+				"internalValue": "groupMaxPriceValue"
+			},
+			{
+				"externalValue": "groupOfferPriceRange",
+				"internalValue": "price"
+			},
+			{
+				"externalValue": "groupListPriceRange",
+				"internalValue": "listprice"
+			}]
+		},
+		{
+			"externalName": "Locale",
+			"internalName": "langId"
+		},
+		{
+			"externalName": "solrSchemaSupportedLanguages",
+			"internalName": "solrSchemaSupportedLanguages",
+			"valuemap": [{
+				"externalValue": "xx",
+				"internalValue": "generic"
+			},
+			{
+				"externalValue": "ar",
+				"internalValue": "Arabic"
+			},
+			{
+				"externalValue": "bg",
+				"internalValue": "Bulgarian"
+			},
+			{
+				"externalValue": "ca",
+				"internalValue": "Catalan"
+			},
+			{
+				"externalValue": "cs",
+				"internalValue": "Czech"
+			},
+			{
+				"externalValue": "da",
+				"internalValue": "Danish"
+			},
+			{
+				"externalValue": "de",
+				"internalValue": "German"
+			},
+			{
+				"externalValue": "el",
+				"internalValue": "Greek"
+			},
+			{
+				"externalValue": "en",
+				"internalValue": "English"
+			},
+			{
+				"externalValue": "es",
+				"internalValue": "Spanish"
+			},
+			{
+				"externalValue": "eu",
+				"internalValue": "Basque"
+			},
+			{
+				"externalValue": "fa",
+				"internalValue": "Persian"
+			},
+			{
+				"externalValue": "fi",
+				"internalValue": "Finnish"
+			},
+			{
+				"externalValue": "fr",
+				"internalValue": "French"
+			},
+			{
+				"externalValue": "ga",
+				"internalValue": "Irish"
+			},
+			{
+				"externalValue": "gl",
+				"internalValue": "Galician"
+			},
+			{
+				"externalValue": "hi",
+				"internalValue": "Hindi"
+			},
+			{
+				"externalValue": "hu",
+				"internalValue": "Hungarian"
+			},
+			{
+				"externalValue": "hy",
+				"internalValue": "Armenian"
+			},
+			{
+				"externalValue": "id",
+				"internalValue": "Indonesian"
+			},
+			{
+				"externalValue": "it",
+				"internalValue": "Italian"
+			},
+			{
+				"externalValue": "he",
+				"internalValue": "Hebrew"
+			},
+			{
+				"externalValue": "ja",
+				"internalValue": "Japanese"
+			},
+			{
+				"externalValue": "ko",
+				"internalValue": "Korean"
+			},
+			{
+				"externalValue": "lv",
+				"internalValue": "Latvian"
+			},
+			{
+				"externalValue": "nl",
+				"internalValue": "Dutch"
+			},
+			{
+				"externalValue": "no",
+				"internalValue": "Norwegian"
+			},
+			{
+				"externalValue": "pl",
+				"internalValue": "Polish"
+			},
+			{
+				"externalValue": "pt",
+				"internalValue": "Portuguese"
+			},
+			{
+				"externalValue": "ro",
+				"internalValue": "Romanian"
+			},
+			{
+				"externalValue": "ru",
+				"internalValue": "Russian"
+			},
+			{
+				"externalValue": "sv",
+				"internalValue": "Swedish"
+			},
+			{
+				"externalValue": "th",
+				"internalValue": "Thai"
+			},
+			{
+				"externalValue": "tr",
+				"internalValue": "Turkish"
+			},
+			{
+				"externalValue": "zh",
+				"internalValue": "Chinese"
+			}]
+		}]
+	},
+	"extendedconfiguration": {
+		"configgrouping": [
+		{
+            "name": "NLPPOSCodes",
+            "property": [
+                {
+                    "name" : "NOUN_CODE",
+                    "value" : "NN,NNS,NNS,NNPS,NOUN,NE"
+                },
+                {
+                    "name" : "VERB_CODE",
+                    "value" : "VB,VBD,VBG,VBN,VBP,VBZ,VERB,VMFIN,VVINF,VVFIN,VV"
+                },
+                {
+                    "name" : "ADJECTIVE_CODE",
+                    "value" : "DT,PDT,JJ,JJR,JJS,ADJ,ADJA,ADJD"
+                },
+                {
+                    "name" : "NUMERIC_CODE",
+                    "value" : "CD,CARD,NUM,NFP"
+                }
+            ]
+         },
+         {
+           "name": "NLPSearchFieldMapping",
+           "property": {
+                "name": "NLPFieldsDetail",
+                "value": "[{\"NERTag\":\"SELLER\",\"IndexRawFieldName\":\"seller.raw\",\"IndexNormalizedFieldName\":\"seller.normalized\",\"FieldLevelLemmatization\":\"false\", \"BoostFactor\":\"100.0\"}]"
+           }
+        },
+		{
+			"name": "LoadOnStartup",
+			"property": {
+				"name": "com.ibm.commerce.search.internal.runtime.bootstrap.SearchServiceWarmStarter",
+				"value": "true"
+			}
+		},
+		{
+			"name": "MultipleContracts",
+			"property": {
+				"name": "operation",
+				"value": "OR"
+			}
+		},
+		{
+			"name":"HttpSecuritySettings_tooling",
+			"property": [{
+				"name": "Access-Control-Allow-Methods",
+				"value": "GET, HEAD, POST, OPTIONS, PUT, DELETE, PATCH"
+			},
+			{
+				"name": "Access-Control-Allow-Credentials",
+				"value": "true"
+			},
+			{
+				"name": "Access-Control-Allow-Headers",
+				"value": "Origin,X-Requested-With,Content-Type,Accept,Authorization,cache-control,expires,pragma,wclogonid,wctoken,wctrustedtoken,wcuserid,X-RequestId,X-Request-ID,WCPersonalization,WC_MarketingTrackingConsents,WCPreviewToken"
+			},
+			{
+				"name": "Access-Control-Max-Age",
+				"value": "3600"
+			}
+			]
+		},
+		{
+			"name": "SearchConfiguration",
+			"property": [{
+				"name": "WarmStartOnlyOpenStoreIndex",
+				"value": "true"
+			},
+			{
+				"name": "IndexingRetries",
+				"value": "10"
+			},
+			{
+				"name": "IndexingRetryInterval",
+				"value": "60"
+			},
+			{
+				"name": "IndexingTimeout",
+				"value": "150"
+			},
+			{
+				"name": "ReplicationPollingInterval",
+				"value": "5"
+			},
+			{
+				"name": "ReplicationPollingConnectionTimeout",
+				"value": "15"
+			},
+			{
+				"name": "SynonymExpansionThreshold",
+				"value": "300"
+			},
+			{
+				"name": "CombineFilterRuleWithProductSequencing",
+				"value": "false"
+			},
+			{
+				"name": "relevancyType",
+				"value": "1"
+			},
+			{
+				"name": "searchType",
+				"value": "1000"
+			},
+			{
+				"name": "minMatchOption",
+				"value": "2"
+			},
+			{
+				"name": "boostFactorForSubqueryWithMinMatch",
+				"value": "2"
+			},
+			{
+				"name": "IndexingWithExternalIdentifier",
+				"value": "false"
+			},
+			{
+				"name": "MultiThreadedIndexPreprocessing",
+				"value": "false"
+			},
+			{
+				"name": "DeltaIndexingThreshold",
+				"value": "10000"
+			},
+			{
+				"name": "IndexingWarningThreshold",
+				"value": "1000"
+			},
+			{
+				"name": "IndexingMaximumLockTime",
+				"value": "720"
+			},
+			{
+				"name": "MaximumThreadTimeForIndexing",
+				"value": "-1"
+			},
+			{
+				"name": "ElasticSearchPageSize",
+				"value": "20000"
+			},
+			{
+				"name": "FacetPageSize",
+				"value": "1000"
+			},
+			{
+				"name": "SpellCheckAccuracy",
+				"value": "0.3"
+			},
+			{
+				"name": "SpellCheckPrefixLength",
+				"value": "2"
+			},
+			{
+				"name": "SpellCheckSuggestionMode",
+				"value": "MISSING"
+			},
+			{
+				"name": "SpellCheckSortBy",
+				"value": "SCORE"
+			},
+			{
+				"name": "SpellCheckStringDistance",
+				"value": "INTERNAL"
+			},
+			{
+				"name": "SpellCheckMaxEdits",
+				"value": "2"
+			},
+			{
+				"name": "SpellCheckMaxInspections",
+				"value": "5"
+			},
+			{
+				"name": "SpellCheckMaxTermFrequency",
+				"value": "0.01"
+			},
+			{
+				"name": "SpellCheckMinWordLength",
+				"value": "4"
+			},
+			{
+				"name": "SpellCheckMinDocFrequency",
+				"value": "0.0"
+			},
+			{
+				"name": "EscapePatterns",
+				"value": "\\,+,-,&&,~,||,(,),{,},[,],\",^,!,:,/,AND,OR,NOT"
+			},
+			{
+				"name": "IgnorePatterns",
+				"value": ""
+			},
+			{
+				"name": "StopPatterns",
+				"value": "[\\\\*\\\\?]+,''|\"\",.*[\\\\~\\|].*"
+			},
+			{
+				"name": "IgnoreLeadingPatterns",
+				"value": "[\\\\*\\\\?]+"
+			},
+			{
+				"name": "RequestFields",
+				"value": "searchTerm,filterTerm,manufacturer,minPrice,maxPrice,categoryId"
+			},
+			{
+				"name": "ProductView_OverrideFields",
+				"value": "name.raw,description.raw,url.thumbnail,keyword.text,url.image,url.seo"
+			},
+			{
+				"name": "CategoryView_OverrideFields",
+				"value": "url.thumbnail,url.image,url.seo"
+			},
+			{
+				"name": "LimitKeywordSuggestionsToStoreAndCatalog",
+				"value": "false"
+			},
+			{
+				"name": "SearchBasedKeywordSuggestions",
+				"value": "true"
+			},
+			{
+				"name": "SearchBasedKeywordSuggestionsMaxShingleSize",
+				"value": "3"
+			},
+			{
+				"name": "SearchBasedKeywordSuggestionsSortByFrequency",
+				"value": "true"
+			},
+			{
+				"name": "FilterInventoryByStoreAndFulfillmentCenter",
+				"value": "inv_strlocqty_%s_%s:%s"
+			},
+			{
+				"name": "FilterOutOfStockInventoryExpression"
+			},
+			{
+				"name": "OnlinePhysicalStoreQualifier",
+				"value": "OnlineStore"
+			},
+			{
+				"name": "IsStoreInventorySharingConfigured",
+				"value": "false"
+			},
+			{
+				"name": "allowedFacetPropertynames",
+				"value": "facet,facet-category,facet-range,facet-classicAttribute"
+			},
+			{
+				"name": "maximumFacetFieldsToRequest",
+				"value": "200"
+			},
+			{
+				"name": "displayLeafCategoriesOnly",
+				"value": "false"
+			},
+			{
+				"name": "categoryFacetLimitForKeywordSearch",
+				"value": "20"
+			},
+			{
+				"name": "facetConfigurationDefaultForLimit",
+				"value": "-1"
+			},
+			{
+				"name": "facetConfigurationDefaultForSort",
+				"value": "count"
+			},
+			{
+				"name": "facetConfigurationDefaultForMinimumCount",
+				"value": "0"
+			},
+			{
+				"name": "BackCompatibleKeywordSearch",
+				"value": "false"
+			},
+			{
+				"name": "QueryParameterReservedWords",
+				"value": "maxRows,MaximumSlop,MinimumMatch,checkEntitlement,DynamicKitReturnPrice,searchType,maxTimeAllowed,debug,preview,price,statistics,relevancyType"
+			},
+			{
+				"name": "ResponseTemplateDefault",
+				"value": "0"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/CatalogEntryView",
+				"value": "XPathToCatalogEntryViewBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/productview/CatalogEntryView",
+				"value": "XPathToCatalogEntryViewResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/CatalogEntryView/SKUs",
+				"value": "XPathToCatalogEntryViewBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/productview/CatalogEntryView/SKUs",
+				"value": "XPathToCatalogEntryViewResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/CatalogEntryView/Price",
+				"value": "XPathToPriceBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/productview/CatalogEntryView/Price",
+				"value": "XPathToPriceResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/CatalogEntryView/Attributes",
+				"value": "XPathToAttributesBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/productview/CatalogEntryView/Attributes",
+				"value": "XPathToAttributesResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/CatalogEntryView/Attributes/Values",
+				"value": "XPathToAttributesValuesBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/productview/CatalogEntryView/Attributes/Values",
+				"value": "XPathToAttributesValuesResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/CatalogEntryView/Attachments",
+				"value": "XPathToAttachmentsBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/productview/CatalogEntryView/Attachments",
+				"value": "XPathToAttachmentsResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/CatalogEntryView/Components",
+				"value": "XPathToComponentsBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/productview/CatalogEntryView/Components",
+				"value": "XPathToComponentsResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/CatalogEntryView/MerchandisingAssociations",
+				"value": "XPathToMerchandisingAssociationsBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/productview/CatalogEntryView/MerchandisingAssociations",
+				"value": "XPathToMerchandisingAssociationsResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/BreadCrumbTrailEntryView",
+				"value": "XPathToBreadCrumbTrailResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/FacetView",
+				"value": "XPathToFacetResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/categoryview/FacetView",
+				"value": "XPathToFacetResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/CatalogEntryView/UserData",
+				"value": "CatalogEntryUserDataFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/productview/CatalogEntryView/UserData",
+				"value": "CatalogEntryUserDataFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/categoryview/CatalogGroupView",
+				"value": "XPathToCategoryViewBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/categoryview/CatalogGroupView",
+				"value": "XPathToCategoryViewResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/categoryview/CatalogGroupView/UserData",
+				"value": "CatalogGroupUserDataFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/categoryview/CatalogGroupView/UserData",
+				"value": "CatalogGroupUserDataFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/productview/CatalogEntryView/Attachments/UserData",
+				"value": "AttachmentUserDataFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/1/productview/CatalogEntryView/Attachments/UserData",
+				"value": "AttachmentUserDataFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/sitecontent/WebContentView",
+				"value": "XPathToWebContentViewBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/sitecontent/CatalogEntryView",
+				"value": "XPathToCatalogEntryViewBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/sitecontent/CatalogGroupView",
+				"value": "XPathToCategoryViewBODResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/sitecontent/BreadCrumbTrailEntryView",
+				"value": "XPathToBreadCrumbTrailResponseFieldNameMapping"
+			},
+			{
+				"name": "ResponseTemplate/0/sitecontent/FacetView",
+				"value": "XPathToFacetResponseFieldNameMapping"
+			},
+			{	
+				"name": "ResponseTemplate/0/categoryview/V2CatalogGroupView",	
+				"value": "XPathToCategoryViewV2ResponseFieldNameMapping"	
+			},	
+			 {	
+				"name": "ResponseTemplate/0/productview/V2CatalogEntryView",	
+				"value": "XPathToProductViewV2ResponseFieldNameMapping"	
+			},
+			{
+				"name": "EnableDeepCategoryUnpublish",
+				"value": "false"
+			},
+			{
+				"name": "DisplayPublishedOnly",
+				"value": "false"
+			},
+			{
+				"name": "EnableDeepProductSequence",
+				"value": "false"
+			},
+			{
+				"name": "isStandAloneServer",
+				"value": "false"
+			},
+			{
+				"name": "DisplayEntryWithNoName",
+				"value": "true"
+			},
+			{
+				"name": "DisplayGroupWithNoName",
+				"value": "false"
+			},
+			{
+				"name": "dynamicCatalogEntryRecommendation_searchProfile",
+				"value": "IBM_findCatalogEntryWithoutDescriptionByNameAndShortDescription"
+			},
+			{
+				"name": "SearchProfilesDebug",
+				"value": "true"
+			},
+			{
+				"name": "SearchProfilesPreview",
+				"value": "1"
+			},
+			{
+				"name": "SearchProfilesPrice",
+				"value": "1"
+			},
+			{
+				"name": "MaximumNumberOfSearchTerms",
+				"value": "20"
+			},
+			{
+				"name": "MaximumLengthOfSearchPhrase",
+				"value": "100"
+			},
+			{
+				"name": "CacheInvalidationForCatalogEntry",
+				"value": "productId:$catEntryId$,CategoryDisplay:storeId:categoryId:$storeId$:$catGroupId$"
+			},
+			{
+				"name": "CacheInvalidationForCatalogGroup",
+				"value": "CategoryDisplay:storeId:categoryId:$storeId$:$catGroupId$"
+			},
+			{
+				"name": "CacheInvalidationForStoreHeader",
+				"value": "StoreHeader:storeId:catalogId:$storeId$:$catalogId$,StoreHeader:storeId:$storeId$"
+			},
+			{
+				"name": "CacheInvalidationForAll",
+				"value": "clearall"
+			},
+			{
+				"name": "CacheInvalidationDelay",
+				"value": "120000"
+			},
+			{
+				"name": "SearchProfilesStatistics",
+				"value": "true"
+			},
+			{
+				"name": "SearchStatisticsBatchInsertSize",
+				"value": "10000"
+			},
+			{
+				"name": "SearchStatisticsUpdateInterval",
+				"value": "600"
+			},
+			{
+				"name": "SearchStatisticsResultPagesTrackingThreshold",
+				"value": "1"
+			},
+			{
+				"name": "storeWebAlias",
+				"value": "/wcsstore"
+			},
+			{
+				"name": "hclStoreWebAlias",
+				"value": "/hclstore"
+			},
+			{
+				"name": "StorePreviewPrefix",
+				"value": "/wcsstore"
+			},
+			{
+				"name": "StoreContextRoot",
+				"value": "/webapp/wcs/stores"
+			},
+			{
+				"name": "SearchResultESiteOverwrite",
+				"value": "true"
+			},
+			{
+				"name": "UseGenericUserIfSessionNotAvailable",
+				"value": "true"
+			},
+			{
+				"name": "TieBreaker",
+				"value": "0.1"
+			},
+			{
+				"name": "MaximumSlop",
+				"value": "100"
+			},
+			{
+				"name": "LimitDeepCategoryFacetValuesToImmediateChildrenOnly",
+				"value": "false"
+			},
+			{
+				"name": "EnableProductDisplayConfiguration",
+				"value": "false"
+			},
+			{
+				"name": "TopCategorySortOrder",
+				"value": "0"
+			},
+			{
+				"name": "UseValueSourceFunctionForSorting",
+				"value": "false"
+			},
+			{
+				"name": "useCategoryFacetDisplaySettingsForSearch",
+				"value": "false"
+			},
+			{
+				"name": "skipFetchingFacetValueImageAndSequence",
+				"value": "false"
+			},
+			{
+				"name": "NavigationTrigger",
+				"value": "_nav_"
+			},
+			{
+				"name": "searchTermDropItrCount",
+				"value": "4"
+			},
+			{
+				"name": "hero.searching.enabled",
+				"value": "true"
+			},
+			{
+				"name": "hero.browsing.enabled",
+				"value": "true"
+			},
+			{
+				"name": "hero.innerhit.size",
+				"value": "20000"
+			},
+			{
+				"name": "lemmatization",
+				"value": "true"
+			},
+			{
+				"name": "PartNumberPatterns",
+				"value": "^[a-zA-Z]+[-]{1}[a-zA-Z]+[-]{1}\\d+$,^[a-zA-Z]+[-]{1}[a-zA-Z]+[-]{1}\\d+[-]{1}\\d+$,^[a-zA-Z]+[-]{1}[a-zA-Z]+[-]{1}[a-zA-Z]+[-]{1}\\d+$,^[a-zA-Z]+[-]{1}[a-zA-Z]+[-]{1}[a-zA-Z]+[-]{1}\\d+[-]{1}[a-zA-Z]+$"
+			},
+			{
+				"name": "ranking.product.search.count",
+				"value": "100"
+			},
+			{
+				"name": "formatUserData",
+				"value": "true"
+			},
+			{
+				"name": "search.query.analyzer",
+				"value": "true"
+			},
+			{
+				"name": "maxTimeAllowed",
+				"value": "15000"
+			},
+			{
+				"name": "removeEmptyCategories",
+				"value": "true"
+			}
+			]
+		},
+		{
+			"name": "TransactionServerSetting",
+			"property": [{
+				"name": "TransactionServerSetting/SSLAcceleratorOption",
+				"value": "Disabled"
+			},
+			{
+				"name": "TransactionServerSetting/inSSLPort",
+				"value": "443"
+			},
+			{
+				"name": "TransactionServerSetting/hostnameReference",
+				"value": "com.ibm.commerce.foundation.server.services.transaction.hostname"
+			},
+			{
+				"name": "TransactionServerSetting/securedPortReference",
+				"value": "com.ibm.commerce.foundation.server.services.transaction.port.secured"
+			},
+			{
+				"name": "TransactionServerSetting/nonSecuredPortReference",
+				"value": "com.ibm.commerce.foundation.server.services.transaction.port.nonsecured"
+			},
+			{
+				"name": "TransactionServerSetting/securedPreviewPortReference",
+				"value": "com.ibm.commerce.foundation.server.services.transaction.preview.port.secured"
+			},
+			{
+				"name": "TransactionServerSetting/nonSecuredPreviewPortReference",
+				"value": "com.ibm.commerce.foundation.server.services.transaction.preview.port.nonsecured"
+			},
+			{
+				"name": "TransactionServerSetting/Security/sessionKey",
+				"value": "com.ibm.commerce.foundation.server.services.commerce.integration.sessionkey"
+			},
+			{
+				"name": "TransactionServerSetting/SessionManagement/authenticationAllowedUsingCookies",
+				"value": "true"
+			},
+			{
+				"name": "TransactionServerSetting/SessionManagement/allowMultipleLogonForSameUser",
+				"value": "false"
+			},
+			{
+				"name": "ServicesPreview/enable",
+				"value": "true"
+			},
+			{
+				"name": "LoginTimeout/Timeout/buffer",
+				"value": "1740000"
+			},
+			{
+				"name": "LoginTimeout/Timeout/value",
+				"value": "1800000"
+			},
+			{
+				"name": "TransactionServerSetting/RemoteRestRequestConnectTimeout",
+				"value": "10000"
+			},
+			{
+				"name": "TransactionServerSetting/RemoteRestRequestReadTimeout",
+				"value": "10000"
+			},
+			{
+				"name": "TransactionServerSetting/SessionManagement/cookie/domain"
+			},
+			{
+				"name": "TransactionServerSetting/SessionManagement/cookie/path",
+				"value": "/"
+			},
+			{
+				"name": "TransactionServerSetting/SessionManagement/allowBusinessContextCallback",
+				"value": "false"
+			},
+			{
+				"name": "TransactionServerSetting/SessionManagement/keepAliveSessionEnabled",
+				"value": "true"
+			},
+			{
+				"name": "TransactionServerSetting/SessionManagement/PersistentSession/enable",
+				"value": "true"
+			},
+			{
+				"name": "TransactionServerSetting/SessionManagement/PersistentSession/cookieExpiry",
+				"value": "-1"
+			},
+			{
+				"name": "TransactionServerSetting/SessionManagement/ContextName/baseContext",
+				"value": "com.ibm.commerce.context.base.BaseContext"
+			},
+			{
+				"name": "TransactionServerSetting/Security/multiHashEnabled",
+				"value": "false"
+			}]
+		},
+		{
+			"name": "StoreServerSetting",
+			"property": [{
+				"name": "StoreServerSetting/hostnameReference",
+				"value": "com.ibm.commerce.foundation.server.services.store.hostname"
+			},
+			{
+				"name": "StoreServerSetting/portReference",
+				"value": "com.ibm.commerce.foundation.server.services.store.port"
+			}]
+		},
+		{
+			"name": "CustomizationServerSetting",
+			"property": [{
+				"name": "CustomizationServerSetting/enabled",
+				"value": "true"
+			},
+			{
+				"name": "CustomizationServerSetting/hostnameReference",
+				"value": "com.ibm.commerce.foundation.server.services.customization.hostname"
+			},
+			{
+				"name": "CustomizationServerSetting/portReference",
+				"value": "com.ibm.commerce.foundation.server.services.customization.port"
+			}]
+		},
+		{
+			"name": "CrossTransactionCache",
+			"property": [{
+				"name": "CrossTransactionCache/enabled",
+				"value": "true"
+			},
+			{
+				"name": "CrossTransactionCache/maxInactivityTime",
+				"value": "0"
+			},
+			{
+				"name": "CrossTransactionCache/maxTimeToLive",
+				"value": "-1"
+			},
+			{
+				"name": "CrossTransactionCache/authoringMaxTimeToLive",
+				"value": "5"
+			},
+			{
+				"name": "CrossTransactionCache/defaultResultSizeThreshold",
+				"value": "3"
+			},
+			{
+				"name": "CrossTransactionCache/reduceMemory",
+				"value": "false"
+			},
+			{
+				"name": "CrossTransactionCache/reduceInvalidationIds",
+				"value": "true"
+			},
+			{
+				"name": "CrossTransactionCache/sizeable",
+				"value": "true"
+			}]
+		},
+		{
+			"name": "LocalTransactionCache",
+			"property": [{
+				"name": "LocalTransactionCache/enabled",
+				"value": "true"
+			},
+			{
+				"name": "LocalTransactionCache/maxSize",
+				"value": "50000"
+			}]
+		},
+		{
+			"name": "SchedulerSetting",
+			"property": [{
+				"name": "cycleTime",
+				"value": "600"
+			},
+			{
+				"name": "regularJobExpireTime",
+				"value": "5400"
+			},
+			{
+				"name": "threadPools",
+				"value": "default: maxThreads=10, workTimeout=4200; broadcast: maxThreads=10; cacheInv: maxThreads=10, workTimeout=300;"
+			},
+			{
+				"name": "CI_IS_SCHEDULER_HOST",
+				"value": "true"
+			}]
+		},
+		{
+			"name": "ThreadPoolSetting/default",
+			"property": [{
+				"name": "CorePoolSize",
+				"value": "5"
+			},
+			{
+				"name": "MaximumPoolSize",
+				"value": "10"
+			},
+			{
+				"name": "KeepAliveTime",
+				"value": "5400"
+			}]
+		},
+		{
+			"name": "ThreadPoolSetting/indexload",
+			"property": [{
+				"name": "CorePoolSize",
+				"value": "100"
+			},
+			{
+				"name": "MaximumPoolSize",
+				"value": "1000"
+			},
+			{
+				"name": "KeepAliveTime",
+				"value": "5400"
+			}]
+		},
+		{
+			"name": "ThreadPoolSetting/reloadcore",
+			"property": [{
+				"name": "CorePoolSize",
+				"value": "5"
+			},
+			{
+				"name": "MaximumPoolSize",
+				"value": "10"
+			},
+			{
+				"name": "KeepAliveTime",
+				"value": "5400"
+			},
+			{
+				"name": "maxThreadQueueSize",
+				"value": "10000"
+			}]
+		},
+		{
+			"name": "ThreadPoolSetting/replicateIndex",
+			"property": [{
+				"name": "CorePoolSize",
+				"value": "5"
+			},
+			{
+				"name": "MaximumPoolSize",
+				"value": "10"
+			},
+			{
+				"name": "KeepAliveTime",
+				"value": "5400"
+			},
+			{
+				"name": "maxThreadQueueSize",
+				"value": "10000"
+			}]
+		},
+		{
+			"name": "BACSFTPServerSetting",
+			"property": [{
+				"name": "BACSFTPServerSetting/port",
+				"value": "29001"
+			},
+			{
+				"name": "BACSFTPServerSetting/hostname",
+				"value": "localhost"
+			},
+			{
+				"name": "BACSFTPServerSetting/username"
+			},
+			{
+				"name": "BACSFTPServerSetting/userPassword"
+			},
+			{
+				"name": "BACSFTPServerSetting/remoteDirectory",
+				"value": "outbox"
+			},
+			{
+				"name": "BACSFTPServerSetting/localDirectory",
+				"value": "localFileCopyDirectory"
+			}]
+		},
+		{
+			"name": "HashAlgorithmPriorities",
+			"property": [{
+				"name": "SHA",
+				"value": "1"
+			},
+			{
+				"name": "SHA-256",
+				"value": "2"
+			}]
+		},
+		{
+			"name": "MultiplePDK",
+			"property": {
+				"name": "enable",
+				"value": "true"
+			}
+		}]
+	}
+}
