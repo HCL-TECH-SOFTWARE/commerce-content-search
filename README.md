@@ -20,3 +20,6 @@ This asset provides the capability to crawl and index web content from third par
 
 ## Unstructured Content Search
 This asset provides the capability to index Unstructured content (PDFs, Word and other socuments) and display them as search results.
+
+# HCL Commerce Version compatibity
+This asset has been tested with HCL Commerce v9.1.11 and Elastic-Search.
