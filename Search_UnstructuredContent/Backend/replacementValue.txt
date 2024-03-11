@@ -1,0 +1,122 @@
+{
+  "settings": {
+    "number_of_shards": "3",
+	"number_of_replicas": 0,
+	"refresh_interval": "10s",
+    "max_result_window": 20000,
+	"index.store.type": "niofs",
+    "analysis": {
+      "normalizer": {
+        "lowercase": {
+          "type": "custom",
+          "char_filter": [],
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+	"dynamic": "true",
+	"date_detection": "false",
+	"numeric_detection": "false",
+	"properties": {
+		"attachment": {
+			"properties": {
+				"content_type": {
+					"type": "keyword",
+					"doc_values": "true",
+					"eager_global_ordinals": "false",
+					"index": "true",
+					"index_options": "docs",
+					"norms": "false",
+					"store": "true"
+				},
+				"title": {
+					"type": "keyword",
+					"doc_values": "true",
+					"eager_global_ordinals": "false",
+					"index": "true",
+					"index_options": "docs",
+					"norms": "false",
+					"store": "true"
+				},
+				"content": {
+					"type": "text",
+					"doc_values": "true",
+					"eager_global_ordinals": "false",
+					"index": "true",
+					"index_options": "docs",
+					"norms": "false",
+					"store": "true"
+				}
+			}
+		},
+		"file_type": {
+			"type": "keyword",
+			"doc_values": "true",
+			"eager_global_ordinals": "true",
+			"index": "true",
+			"index_options": "docs",
+			"norms": "false",
+			"store": "true"
+		},
+		"filename": {
+			"type": "text",
+			"doc_values": "true",
+			"eager_global_ordinals": "false",
+			"index": "true",
+			"index_options": "freqs",
+			"norms": "false",
+			"store": "true"
+		},
+		"fileABSPath": {
+			"type": "keyword",
+			"doc_values": "true",
+			"eager_global_ordinals": "false",
+			"index": "true",
+			"index_options": "freqs",
+			"norms": "false",
+			"store": "true"
+		},
+		"title": {
+			"type": "keyword",
+			"doc_values": "true",
+			"eager_global_ordinals": "true",
+			"index": "true",
+			"index_options": "docs",
+			"norms": "false",
+			"store": "true"
+		},
+		"short.desc": {
+			"type": "text",
+			"doc_values": "true",
+			"eager_global_ordinals": "true",
+			"index": "true",
+			"index_options": "docs",
+			"norms": "false",
+			"store": "true"
+		},
+		"product.name": {
+			"type": "keyword",
+			"doc_values": "true",
+			"eager_global_ordinals": "true",
+			"index": "true",
+			"index_options": "docs",
+			"norms": "false",
+			"store": "true"
+		},
+		"sku": {
+			"type": "keyword",
+			"doc_values": "true",
+			"eager_global_ordinals": "true",
+			"index": "true",
+			"index_options": "docs",
+			"norms": "false",
+			"store": "true"
+		}
+	}
+	}
+}
