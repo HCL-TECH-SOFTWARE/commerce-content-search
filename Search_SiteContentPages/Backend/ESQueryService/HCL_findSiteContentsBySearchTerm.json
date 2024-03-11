@@ -1,0 +1,22 @@
+{
+	"profileName" : "HCL_findSiteContentsBySearchTerm",
+
+	"indexName" : "sitecontent",
+	
+	"query" : {
+			
+		"params" : [
+			{"maxRows" : "50"}
+		],
+					
+		"queryFields" : ["attachment.content"],
+		
+		"provider" : [],
+		
+		"preprocessor" : [],
+		
+		"postprocessor" : ["com.hcl.commerce.search.internal.expression.postprocessor.SearchWebContentPostprocessor"],
+		
+		"responseFields" : ["attachment.content","attachment.title","attachment.content_type","filename","fileABSPath"]
+	}	
+}

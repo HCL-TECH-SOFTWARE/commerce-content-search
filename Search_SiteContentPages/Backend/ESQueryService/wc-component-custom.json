@@ -1,0 +1,31 @@
+{
+    "valuemappingservice": {
+        "valuemapping": [
+            {	
+				"externalName": "UnstructuredContentResponseFieldMapping",	
+				"internalName": "UnstructuredContentResponseFieldMapping",	
+				"valuemap": [{	
+						"externalValue": "content",	
+						"internalValue": "attachment.content"	
+					},	
+					{	
+						"externalValue": "name",	
+						"internalValue": "attachment.title"	
+					},	
+					{	
+						"externalValue": "identifier",	
+						"internalValue": "filename"	
+					},	
+					{	
+						"externalValue": "mimetype",	
+						"internalValue": "attachment.content_type"	
+					},	
+					{	
+						"externalValue": "url",	
+						"internalValue": "fileABSPath"	
+					}
+				]	
+			}
+        ]
+    }
+}
