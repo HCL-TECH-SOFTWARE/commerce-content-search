@@ -15,30 +15,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import io.swagger.annotations.ApiParam;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
-import io.swagger.v3.oas.annotations.enums.ParameterIn;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import io.swagger.v3.oas.annotations.tags.Tag;
 
 import javax.servlet.http.HttpServletRequest;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hcl.commerce.search.exception.SearchApplicationException;
 import com.hcl.commerce.search.expression.SearchCriteria;
-import com.hcl.commerce.search.expression.SearchExpressionConstants;
 import com.hcl.commerce.search.internal.runtime.SearchServiceFacade;
-import com.hcl.commerce.search.internal.util.MetricsHelper;
 import com.hcl.commerce.search.internal.util.StoreHelper;
-import com.hcl.commerce.search.rest.swagger.model.CategorySuggestion;
-import com.hcl.commerce.search.rest.util.GenericUtils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -49,7 +34,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 @RequestMapping("/store/{storeId}/unstructuredcontent")
-@Tag(name = "UnstructuredContent", description = "This class provides RESTful services to get resource details for unstructured content.")
 public class UnstructuredContentResource {
 
 	private static final String CLASSNAME = UnstructuredContentResource.class.getName();
@@ -147,6 +131,15 @@ public class UnstructuredContentResource {
 	 */
 	private static final String SITECONTENTS_SUGGESTIONS = "siteContentsBySearchTerm/{"
 			+ PARAMETER_SEARCH_TERM + "}";
+	private static final String CTRL_PARAM_SEARCH_TERM = "_wcf.search.term";
+	public static final String CTRL_PARAM_SEARCH_STORE_ONLINE = "_wcf.search.store.online";
+	public static final String CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE_URI = "_wcf.search.internal.service.resource.uri";
+	public static final String CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE_URL = "_wcf.search.internal.service.resource.url";
+	public static final String CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE = "_wcf.search.internal.service.resource";
+	public static final String CTRL_PARAM_SEARCH_PROFILE = "_wcf.search.profile";
+	public static final String CTRL_PARAM_SEARCH_LANGUAGE = "_wcf.search.language";
+	public static final String PARAM_NAME_LANG_ID = "langId";
+	public static final String STORECONFIG_HCL_MARKETPLACE_ENABLED = "hcl.marketplace.enabled";
 	
 	@Autowired
 	protected HttpServletRequest request;
@@ -158,24 +151,14 @@ public class UnstructuredContentResource {
 	 *         <code>unstructuredcontent</code> resource details.
 	 */
 	@RequestMapping(value = WEBCONTENTS_SUGGESTIONS, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	@Operation(summary = "Provides webContents for search result page.")
-	@Parameters({
-			@Parameter(name =  PARAMETER_SEARCH_TYPE, required =  false, schema = @Schema(description =  PARAMETER_SEARCH_TYPE_DESCRIPTION, type =  DATATYPE_INTEGER), in =  ParameterIn.QUERY),
-			@Parameter(name =  PARAMETER_LANG_ID, required =  false, schema = @Schema(description =  PARAMETER_LANG_ID_DESCRIPTION, type =  DATATYPE_STRING), in =  ParameterIn.QUERY),
-			@Parameter(name =  PARAMETER_PROFILE_NAME, required =  false, schema = @Schema(description =  PARAMETER_PROFILE_NAME_DESCRIPTION, type =  DATATYPE_STRING), in =  ParameterIn.QUERY)})
-	@ApiResponses(value = {
-			@ApiResponse(responseCode = "200", description = RESPONSE_200_DESCRIPTION, content = @Content(schema = @Schema(implementation = CategorySuggestion.class))),
-			@ApiResponse(responseCode = "400", description = RESPONSE_400_DESCRIPTION),
-			@ApiResponse(responseCode = "404", description = RESPONSE_404_DESCRIPTION),
-			@ApiResponse(responseCode = "500", description = RESPONSE_500_DESCRIPTION) })
-	public ResponseEntity findWebContentsBySearchTerm(@ApiParam(value = "The store ID.", required = true) @PathVariable("storeId") String iStoreId,
-			@ApiParam(value = PARAMETER_SEARCH_TERM_DESCRIPTION, required = true) @PathVariable(PARAMETER_SEARCH_TERM) String searchTerm)
+	public ResponseEntity findWebContentsBySearchTerm(@RequestParam(value = "The store ID.", required = true) @PathVariable("storeId") String iStoreId,
+			@RequestParam(value = PARAMETER_SEARCH_TERM_DESCRIPTION, required = true) @PathVariable(PARAMETER_SEARCH_TERM) String searchTerm)
 			throws Exception {
 		if (LOGGER.isTraceEnabled()) {
 			LOGGER.trace("ENTRY");
 		}
 		String strLanguageId = request.getParameter(PARAMETER_LANG_ID);
-		String marketplaceStore = StoreHelper.getStoreConfigurationPropertyValueByName(iStoreId, SearchExpressionConstants.STORECONFIG_HCL_MARKETPLACE_ENABLED,strLanguageId);
+		String marketplaceStore = StoreHelper.getStoreConfigurationPropertyValueByName(iStoreId, STORECONFIG_HCL_MARKETPLACE_ENABLED,strLanguageId);
 		ResponseEntity result = null;
 		ResponseEntity webContentResult = null;
 		ResponseEntity unstructuredContentResult = null;
@@ -259,24 +242,15 @@ public class UnstructuredContentResource {
 	 *         <code>sitecontent</code> resource details.
 	 */
 	@RequestMapping(value = UNSTRUCTUREDCONTENTS_SUGGESTIONS, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	@Operation(summary = "Provides webContents for search result page.")
-	@Parameters({
-			@Parameter(name =  PARAMETER_SEARCH_TYPE, required =  false, schema = @Schema(description =  PARAMETER_SEARCH_TYPE_DESCRIPTION, type =  DATATYPE_INTEGER), in =  ParameterIn.QUERY),
-			@Parameter(name =  PARAMETER_LANG_ID, required =  false, schema = @Schema(description =  PARAMETER_LANG_ID_DESCRIPTION, type =  DATATYPE_STRING), in =  ParameterIn.QUERY),
-			@Parameter(name =  PARAMETER_PROFILE_NAME, required =  false, schema = @Schema(description =  PARAMETER_PROFILE_NAME_DESCRIPTION, type =  DATATYPE_STRING), in =  ParameterIn.QUERY)})
-	@ApiResponses(value = {
-			@ApiResponse(responseCode = "200", description = RESPONSE_200_DESCRIPTION, content = @Content(schema = @Schema(implementation = CategorySuggestion.class))),
-			@ApiResponse(responseCode = "400", description = RESPONSE_400_DESCRIPTION),
-			@ApiResponse(responseCode = "404", description = RESPONSE_404_DESCRIPTION),
-			@ApiResponse(responseCode = "500", description = RESPONSE_500_DESCRIPTION) })
-	public ResponseEntity findUnstructuredContentsBySearchTerm(@ApiParam(value = "The store ID.", required = true) @PathVariable("storeId") String iStoreId,
-			@ApiParam(value = PARAMETER_SEARCH_TERM_DESCRIPTION, required = true) @PathVariable(PARAMETER_SEARCH_TERM) String searchTerm)
+	
+	public ResponseEntity findUnstructuredContentsBySearchTerm(@RequestParam(value = "The store ID.", required = true) @PathVariable("storeId") String iStoreId,
+			@RequestParam(value = PARAMETER_SEARCH_TERM_DESCRIPTION, required = true) @PathVariable(PARAMETER_SEARCH_TERM) String searchTerm)
 			throws Exception {
 		if (LOGGER.isTraceEnabled()) {
 			LOGGER.trace("ENTRY");
 		}
 		String strLanguageId = request.getParameter(PARAMETER_LANG_ID);
-		 String marketplaceStore = StoreHelper.getStoreConfigurationPropertyValueByName(iStoreId, SearchExpressionConstants.STORECONFIG_HCL_MARKETPLACE_ENABLED,strLanguageId);
+		 String marketplaceStore = StoreHelper.getStoreConfigurationPropertyValueByName(iStoreId, STORECONFIG_HCL_MARKETPLACE_ENABLED,strLanguageId);
 		ResponseEntity result = null;
 		ResponseEntity webContentResult = null;
 		ResponseEntity unstructuredContentResult = null;
@@ -355,24 +329,15 @@ public class UnstructuredContentResource {
 	 *         <code>sitecontent</code> resource details.
 	 */
 	@RequestMapping(value = SITECONTENTS_SUGGESTIONS, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	@Operation(summary = "Provides sitecontents for search result page.")
-	@Parameters({
-			@Parameter(name =  PARAMETER_SEARCH_TYPE, required =  false, schema = @Schema(description =  PARAMETER_SEARCH_TYPE_DESCRIPTION, type =  DATATYPE_INTEGER), in =  ParameterIn.QUERY),
-			@Parameter(name =  PARAMETER_LANG_ID, required =  false, schema = @Schema(description =  PARAMETER_LANG_ID_DESCRIPTION, type =  DATATYPE_STRING), in =  ParameterIn.QUERY),
-			@Parameter(name =  PARAMETER_PROFILE_NAME, required =  false, schema = @Schema(description =  PARAMETER_PROFILE_NAME_DESCRIPTION, type =  DATATYPE_STRING), in =  ParameterIn.QUERY)})
-	@ApiResponses(value = {
-			@ApiResponse(responseCode = "200", description = RESPONSE_200_DESCRIPTION, content = @Content(schema = @Schema(implementation = CategorySuggestion.class))),
-			@ApiResponse(responseCode = "400", description = RESPONSE_400_DESCRIPTION),
-			@ApiResponse(responseCode = "404", description = RESPONSE_404_DESCRIPTION),
-			@ApiResponse(responseCode = "500", description = RESPONSE_500_DESCRIPTION) })
-	public ResponseEntity findSiteContentsBySearchTerm(@ApiParam(value = "The store ID.", required = true) @PathVariable("storeId") String iStoreId,
-			@ApiParam(value = PARAMETER_SEARCH_TERM_DESCRIPTION, required = true) @PathVariable(PARAMETER_SEARCH_TERM) String searchTerm)
+
+	public ResponseEntity findSiteContentsBySearchTerm(@RequestParam(value = "The store ID.", required = true) @PathVariable("storeId") String iStoreId,
+			@RequestParam(value = PARAMETER_SEARCH_TERM_DESCRIPTION, required = true) @PathVariable(PARAMETER_SEARCH_TERM) String searchTerm)
 			throws Exception {
 		if (LOGGER.isTraceEnabled()) {
 			LOGGER.trace("ENTRY");
 		}
 		String strLanguageId = request.getParameter(PARAMETER_LANG_ID);
-		 String marketplaceStore = StoreHelper.getStoreConfigurationPropertyValueByName(iStoreId, SearchExpressionConstants.STORECONFIG_HCL_MARKETPLACE_ENABLED,strLanguageId);
+		 String marketplaceStore = StoreHelper.getStoreConfigurationPropertyValueByName(iStoreId, STORECONFIG_HCL_MARKETPLACE_ENABLED,strLanguageId);
 		ResponseEntity result = null;
 		String searchType = request.getParameter(PARAMETER_SEARCH_TYPE);	
 		
@@ -395,20 +360,20 @@ public class UnstructuredContentResource {
 		String profileName = "HCL_findWebContentsBySearchTerm";
 		webContentsearchCriteria = prepareSearchCriteria(iStoreId, searchTerm, RESOURCE_NAME,
 					RESOURCE_PATH + WEBCONTENTS_SUGGESTIONS, profileName);
-		webContentSearchTerm = webContentsearchCriteria.getControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM);
+		webContentSearchTerm = webContentsearchCriteria.getControlParameterValue(CTRL_PARAM_SEARCH_TERM);
 		if(webContentSearchTerm == null)
 		{
 			webContentSearchTerm = webContentsearchCriteria.getControlParameterValue(TERM);
-			webContentsearchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM, webContentsearchCriteria.getControlParameterValue(TERM));
+			webContentsearchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_TERM, webContentsearchCriteria.getControlParameterValue(TERM));
 		}
 		if (webContentSearchTerm != null && webContentSearchTerm.equals("*")) {
-			webContentsearchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM, "####");
+			webContentsearchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_TERM, "####");
         }
 		if (webContentSearchTerm == null || webContentSearchTerm.length() == 0) {
 			if (LOGGER.isTraceEnabled()) {
 				LOGGER.trace("searchTerm is not valid: \'" + webContentSearchTerm);
 			}
-			throw new SearchApplicationException(HttpStatus.BAD_REQUEST.value(), "CWXFR0228E", "term");
+			throw new Exception();
 		} else {
 			result = SearchServiceFacade.getInstance().performSearch(webContentsearchCriteria);
 		}
@@ -423,21 +388,21 @@ public class UnstructuredContentResource {
         attachmentContentSearchCriteria = prepareSearchCriteria(iStoreId, searchTerm, RESOURCE_NAME,
 				RESOURCE_PATH + UNSTRUCTUREDCONTENTS_SUGGESTIONS, profileName);
         
-        attachmentContentSearchTerm = attachmentContentSearchCriteria.getControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM);
+        attachmentContentSearchTerm = attachmentContentSearchCriteria.getControlParameterValue(CTRL_PARAM_SEARCH_TERM);
 				
 		if(attachmentContentSearchTerm == null)
 		{
 			attachmentContentSearchTerm = attachmentContentSearchCriteria.getControlParameterValue(TERM);
-			attachmentContentSearchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM, attachmentContentSearchCriteria.getControlParameterValue(TERM));
+			attachmentContentSearchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_TERM, attachmentContentSearchCriteria.getControlParameterValue(TERM));
 		}		
 		if (attachmentContentSearchTerm != null && attachmentContentSearchTerm.equals("*")) {
-			attachmentContentSearchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM, "####");
+			attachmentContentSearchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_TERM, "####");
         }
 		if (attachmentContentSearchTerm == null || attachmentContentSearchTerm.length() == 0) {
 			if (LOGGER.isTraceEnabled()) {
 				LOGGER.trace("searchTerm is not valid: \'" + attachmentContentSearchTerm);
 			}
-			throw new SearchApplicationException(HttpStatus.BAD_REQUEST.value(), "CWXFR0228E", "term");
+			throw new Exception();
 		} else {
 			result = SearchServiceFacade.getInstance().performSearch(attachmentContentSearchCriteria);
 		}
@@ -451,20 +416,20 @@ public class UnstructuredContentResource {
 		String profileName = "HCL_findSiteContentsBySearchTerm";
 		siteContentsearchCriteria = prepareSearchCriteria(iStoreId, searchTerm, RESOURCE_NAME,
 					RESOURCE_PATH + SITECONTENTS_SUGGESTIONS, profileName);
-		siteContentSearchTerm = siteContentsearchCriteria.getControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM);
+		siteContentSearchTerm = siteContentsearchCriteria.getControlParameterValue(CTRL_PARAM_SEARCH_TERM);
 		if(siteContentSearchTerm == null)
 		{
 			siteContentSearchTerm = siteContentsearchCriteria.getControlParameterValue(TERM);
-			siteContentsearchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM, siteContentsearchCriteria.getControlParameterValue(TERM));
+			siteContentsearchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_TERM, siteContentsearchCriteria.getControlParameterValue(TERM));
 		}
 		if (siteContentSearchTerm != null && siteContentSearchTerm.equals("*")) {
-			siteContentsearchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM, "####");
+			siteContentsearchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_TERM, "####");
         }
 		if (siteContentSearchTerm == null || siteContentSearchTerm.length() == 0) {
 			if (LOGGER.isTraceEnabled()) {
 				LOGGER.trace("searchTerm is not valid: \'" + siteContentSearchTerm);
 			}
-			throw new SearchApplicationException(HttpStatus.BAD_REQUEST.value(), "CWXFR0228E", "term");
+			throw new Exception();
 		} else {
 			result = SearchServiceFacade.getInstance().performSearch(siteContentsearchCriteria);
 		}
@@ -497,32 +462,30 @@ public class UnstructuredContentResource {
 					+ ",  resourceUri : " + resourceUri);
 		}
 		
-		String langId = request.getParameter(SearchExpressionConstants.PARAM_NAME_LANG_ID);
+		String langId = request.getParameter(PARAM_NAME_LANG_ID);
 		
 		SearchCriteria searchCriteria = SearchCriteria.getCriteria();
 		//Set all the necessary control parameters in the searchCriteria. Below is just a sample about how to set parameters.
-		searchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_LANGUAGE,langId);
-		searchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_PROFILE,
+		searchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_LANGUAGE,langId);
+		searchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_PROFILE,
 				profileName);
-		searchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE,
+		searchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE,
 				resourceName);
 		searchCriteria.setControlParameterValue(
-				SearchExpressionConstants.CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE_URL, getURIWithQueryString());
+				CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE_URL, getURIWithQueryString());
 		searchCriteria.setControlParameterValue(
-				SearchExpressionConstants.CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE_URI, resourceUri);
-		searchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_STORE_ONLINE, storeId);
+				CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE_URI, resourceUri);
+		searchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_STORE_ONLINE, storeId);
 		String searchTermQueryParameter = searchCriteria
-				.getControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM);
+				.getControlParameterValue(CTRL_PARAM_SEARCH_TERM);
 		if (searchTermQueryParameter != null && searchTermQueryParameter.trim().length() > 0) {
 			if (LOGGER.isTraceEnabled()) {
 				LOGGER.trace("Using the search Term query parameter: " + searchTermQueryParameter
 						+ " instade of the search term path parameter :" + searchTerm);
 			}
 			searchTerm = searchTermQueryParameter.trim();
-		} else if (searchTerm != null) {
-			searchTerm = GenericUtils.decodeString(searchTerm, request.getCharacterEncoding());
-		}
-		searchCriteria.setControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_TERM, searchTerm);
+		} 
+		searchCriteria.setControlParameterValue(CTRL_PARAM_SEARCH_TERM, searchTerm);
 		
 
 		if (LOGGER.isTraceEnabled()) {
