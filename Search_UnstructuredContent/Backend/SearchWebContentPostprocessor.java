@@ -53,7 +53,6 @@ import org.slf4j.LoggerFactory;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hcl.commerce.search.expression.SearchCriteria;
-import com.hcl.commerce.search.expression.SearchExpressionConstants;
 import com.hcl.commerce.search.expression.SearchResponse;
 import com.hcl.commerce.search.internal.config.SearchConfigurationRegistry;
 import com.hcl.commerce.search.internal.config.ValueMappingService;
@@ -68,6 +67,15 @@ public class SearchWebContentPostprocessor extends AbstractSearchQueryPostproces
 	
 	private static final String EXTERNAL_VALUE = "externalValue";
 	private static final String INTERNAL_VALUE = "internalValue";
+	
+	public static final String CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE = "_wcf.search.internal.service.resource";
+	public static final String KEY_NAME_RESOURCE_ID = "resourceId";
+	public static final String KEY_NAME_RECORD_SET_COUNT = "recordSetCount";
+	public static final String KEY_NAME_RECORD_SET_COMPLETE = "recordSetComplete";
+	public static final String KEY_NAME_RECORD_SET_START_NUM = "recordSetStartNumber";
+	public static final String KEY_NAME_RECORD_SET_TOTAL = "recordSetTotal";
+	public static final String KEY_NAME_RESOURCE_NAME = "resourceName";
+	public static final String CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE_URL = "_wcf.search.internal.service.resource.url";
 
 	/**
 	 * Resets the implementation so it can be serially re-used.
@@ -123,16 +131,16 @@ public class SearchWebContentPostprocessor extends AbstractSearchQueryPostproces
 		}
 		
 		String resourceName = searchCriteria
-				.getControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE);
+				.getControlParameterValue(CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE);
 		
 		Map matchesDocList = iSearchResponseObject.getMatches().get(SearchResponse.HITLIST);
 		if (matchesDocList != null) {
-			iSearchResponseObject.getResponse().put(SearchExpressionConstants.KEY_NAME_RECORD_SET_COMPLETE,matchesDocList.get(SearchExpressionConstants.KEY_NAME_RECORD_SET_COMPLETE));
-			iSearchResponseObject.getResponse().put(SearchExpressionConstants.KEY_NAME_RECORD_SET_COUNT,matchesDocList.get(SearchExpressionConstants.KEY_NAME_RECORD_SET_COUNT));
-			iSearchResponseObject.getResponse().put(SearchExpressionConstants.KEY_NAME_RECORD_SET_START_NUM,matchesDocList.get(SearchExpressionConstants.KEY_NAME_RECORD_SET_START_NUM));
-			iSearchResponseObject.getResponse().put(SearchExpressionConstants.KEY_NAME_RECORD_SET_TOTAL,matchesDocList.get(SearchExpressionConstants.KEY_NAME_RECORD_SET_TOTAL));
-			iSearchResponseObject.getResponse().put(SearchExpressionConstants.KEY_NAME_RESOURCE_ID,searchCriteria.getControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE_URL));
-			iSearchResponseObject.getResponse().put(SearchExpressionConstants.KEY_NAME_RESOURCE_NAME,searchCriteria.getControlParameterValue(SearchExpressionConstants.CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE));
+			iSearchResponseObject.getResponse().put(KEY_NAME_RECORD_SET_COMPLETE,matchesDocList.get(KEY_NAME_RECORD_SET_COMPLETE));
+			iSearchResponseObject.getResponse().put(KEY_NAME_RECORD_SET_COUNT,matchesDocList.get(KEY_NAME_RECORD_SET_COUNT));
+			iSearchResponseObject.getResponse().put(KEY_NAME_RECORD_SET_START_NUM,matchesDocList.get(KEY_NAME_RECORD_SET_START_NUM));
+			iSearchResponseObject.getResponse().put(KEY_NAME_RECORD_SET_TOTAL,matchesDocList.get(KEY_NAME_RECORD_SET_TOTAL));
+			iSearchResponseObject.getResponse().put(KEY_NAME_RESOURCE_ID,searchCriteria.getControlParameterValue(CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE_URL));
+			iSearchResponseObject.getResponse().put(KEY_NAME_RESOURCE_NAME,searchCriteria.getControlParameterValue(CTRL_PARAM_SEARCH_INTERNAL_SERVICE_RESOURCE));
 		}
 		iSearchResponseObject.getResponse().put("webContentView",contents);
 		LOGGER.trace("EXIT");
